@@ -1,0 +1,14 @@
+import AlgebraicMethodsCanonicalLaneLean.BridgeLemmas
+
+namespace HautevilleHouse
+namespace AlgebraicMethodsCanonicalLaneLean
+
+def gateClosed (A : AdmissibleClass) : Prop :=
+  A.endpointSatisfied ∨ A.remainderRecorded
+
+theorem gate_from_admissible_class (A : AdmissibleClass) :
+    gateClosed A := by
+  exact A.gateWitness
+
+end AlgebraicMethodsCanonicalLaneLean
+end HautevilleHouse
